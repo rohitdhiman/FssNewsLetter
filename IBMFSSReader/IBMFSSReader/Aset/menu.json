@@ -1,0 +1,390 @@
+{
+    "breadcrumbs": [
+                    {
+                    "root": "true",
+                    "label": "Welcome to FSS (Financial Services Sector)",
+                    "title": "Welcome to FSS (Financial Services Sector)",
+                    "id": "fcdb1dc8-7fad-4558-82c0-438d7c25aac5",
+                    "children": {
+                    "_reference": "6d5f9423-50ca-4302-a172-d29b9f96faf1"
+                    }
+                    },
+                    {
+                    "root": "false",
+                    "label": "FSS Nano SCALE - Q1 2014",
+                    "title": "FSS Nano SCALE - Q1 2014",
+                    "id": "6d5f9423-50ca-4302-a172-d29b9f96faf1"
+                    }
+                    ],
+    "items": [
+              {
+              "root": "false",
+              "label": "From the Editor's Desk - Q1 2014",
+              "title": "From the Editor's Desk - Q1 2014",
+              "parent": "e9fa099e-fe48-492e-8bd6-dd6e087ae545",
+              "type": "item",
+              "id": "9cb64e0a-74f1-4e85-9536-5b9bf8539d6e",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "root": "false",
+              "label": "Tete with Usha Srikanth - Q1 2014",
+              "title": "Tete with Usha Srikanth - Q1 2014",
+              "parent": "e9fa099e-fe48-492e-8bd6-dd6e087ae545",
+              "type": "item",
+              "id": "b697f427-f287-4703-b521-f945c73e3683",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "root": "false",
+              "label": "People Celebration - Q1 2014",
+              "title": "People Celebration - Q1 2014",
+              "parent": "e9fa099e-fe48-492e-8bd6-dd6e087ae545",
+              "type": "item",
+              "id": "852cef1e-26a0-46fe-a54e-be1474f58ce6",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "root": "false",
+              "label": "Contacts - Q1 2014",
+              "title": "Contacts - Q1 2014",
+              "parent": "e9fa099e-fe48-492e-8bd6-dd6e087ae545",
+              "type": "item",
+              "id": "1b8e073d-2415-414e-8154-e150c2262040",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "parElem": "false",
+              "root": "false",
+              "label": "People - Q1 - 2014",
+              "title": "People - Q1 - 2014",
+              "type": "item",
+              "parent": "6d5f9423-50ca-4302-a172-d29b9f96faf1",
+              "id": "e9fa099e-fe48-492e-8bd6-dd6e087ae545",
+              "childSize": 4,
+              "children": [
+                           {
+                           "_reference": "9cb64e0a-74f1-4e85-9536-5b9bf8539d6e"
+                           },
+                           {
+                           "_reference": "b697f427-f287-4703-b521-f945c73e3683"
+                           },
+                           {
+                           "_reference": "852cef1e-26a0-46fe-a54e-be1474f58ce6"
+                           },
+                           {
+                           "_reference": "1b8e073d-2415-414e-8154-e150c2262040"
+                           }
+                           ]
+              },
+              {
+              "root": "false",
+              "label": "Case Studies - Q1 2014",
+              "title": "Case Studies - Q1 2014",
+              "parent": "a0c6e816-de75-42f9-98e2-bf3a54d70e3e",
+              "type": "item",
+              "id": "ae9c98d9-7d38-4e48-8796-0adbd8f81845",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "root": "false",
+              "label": "White Paper - Q1 2014",
+              "title": "White Paper - Q1 2014",
+              "parent": "a0c6e816-de75-42f9-98e2-bf3a54d70e3e",
+              "type": "item",
+              "id": "82552dd1-8878-44ba-8dc9-f9b7cbd0f4c6",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "parElem": "false",
+              "root": "false",
+              "label": "Business - Q1 2014",
+              "title": "Business - Q1 2014",
+              "type": "item",
+              "parent": "6d5f9423-50ca-4302-a172-d29b9f96faf1",
+              "id": "a0c6e816-de75-42f9-98e2-bf3a54d70e3e",
+              "childSize": 2,
+              "children": [
+                           {
+                           "_reference": "ae9c98d9-7d38-4e48-8796-0adbd8f81845"
+                           },
+                           {
+                           "_reference": "82552dd1-8878-44ba-8dc9-f9b7cbd0f4c6"
+                           }
+                           ]
+              },
+              {
+              "root": "false",
+              "label": "Clients - Q1 - 2014",
+              "title": "Clients - Q1 - 2014",
+              "parent": "6d5f9423-50ca-4302-a172-d29b9f96faf1",
+              "type": "item",
+              "id": "7cf3aeab-4ce4-41a3-83aa-603cdaa795f6",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "parElem": "false",
+              "root": "false",
+              "label": "FSS Nano SCALE - Q1 2014",
+              "title": "FSS Nano SCALE - Q1 2014",
+              "type": "item",
+              "parent": "fcdb1dc8-7fad-4558-82c0-438d7c25aac5",
+              "id": "6d5f9423-50ca-4302-a172-d29b9f96faf1",
+              "childSize": 3,
+              "children": [
+                           {
+                           "_reference": "e9fa099e-fe48-492e-8bd6-dd6e087ae545"
+                           },
+                           {
+                           "_reference": "a0c6e816-de75-42f9-98e2-bf3a54d70e3e"
+                           },
+                           {
+                           "_reference": "7cf3aeab-4ce4-41a3-83aa-603cdaa795f6"
+                           }
+                           ]
+              },
+              {
+              "root": "false",
+              "label": "From the Editor's Desk- Q1-2015",
+              "title": "From the Editor's Desk- Q1-2015",
+              "parent": "fc85f335-8288-4e4e-a457-c28beef3ced3",
+              "type": "item",
+              "id": "ad1b5741-88e5-42ae-8817-82375dca1055",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "root": "false",
+              "label": "Tete a tete with Murugappan -Q1-2015",
+              "title": "Tete a tete with Murugappan -Q1-2015",
+              "parent": "fc85f335-8288-4e4e-a457-c28beef3ced3",
+              "type": "item",
+              "id": "5c216716-d83a-410f-9024-8529a63a4cc1",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "root": "false",
+              "label": "People Celebration -Q1-2015",
+              "title": "People Celebration -Q1-2015",
+              "parent": "fc85f335-8288-4e4e-a457-c28beef3ced3",
+              "type": "item",
+              "id": "f9349311-dd96-4c66-942a-838576a0737f",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "root": "false",
+              "label": "Contacts -Q1-2015",
+              "title": "Contacts -Q1-2015",
+              "parent": "fc85f335-8288-4e4e-a457-c28beef3ced3",
+              "type": "item",
+              "id": "7591734a-cb84-4e07-b3ee-0f29caab7832",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "parElem": "false",
+              "root": "false",
+              "label": "People - Q1 - 2015",
+              "title": "People - Q1 - 2015",
+              "type": "item",
+              "parent": "4c4c0579-c439-41ef-a6ab-4f71a62e6737",
+              "id": "fc85f335-8288-4e4e-a457-c28beef3ced3",
+              "childSize": 4,
+              "children": [
+                           {
+                           "_reference": "ad1b5741-88e5-42ae-8817-82375dca1055"
+                           },
+                           {
+                           "_reference": "5c216716-d83a-410f-9024-8529a63a4cc1"
+                           },
+                           {
+                           "_reference": "f9349311-dd96-4c66-942a-838576a0737f"
+                           },
+                           {
+                           "_reference": "7591734a-cb84-4e07-b3ee-0f29caab7832"
+                           }
+                           ]
+              },
+              {
+              "root": "false",
+              "label": "Case Study -Q1-2015",
+              "title": "Case Study -Q1-2015",
+              "parent": "89b828ff-9926-4dc9-98fd-e4af703e1b93",
+              "type": "item",
+              "id": "a9cbaa98-74c3-422d-ab24-bfd2c532faa5",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "root": "false",
+              "label": "White Paper -Q1-2015",
+              "title": "White Paper -Q1-2015",
+              "parent": "89b828ff-9926-4dc9-98fd-e4af703e1b93",
+              "type": "item",
+              "id": "fffbe975-cde6-418d-a30d-3ff2fe469376",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "root": "false",
+              "label": "Event - IT EXPO -Q1-2015",
+              "title": "Event - IT EXPO -Q1-2015",
+              "parent": "89b828ff-9926-4dc9-98fd-e4af703e1b93",
+              "type": "item",
+              "id": "71479f3b-b27a-42ce-89ab-d41937489759",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "parElem": "false",
+              "root": "false",
+              "label": "Business - Q1-2015",
+              "title": "Business - Q1-2015",
+              "type": "item",
+              "parent": "4c4c0579-c439-41ef-a6ab-4f71a62e6737",
+              "id": "89b828ff-9926-4dc9-98fd-e4af703e1b93",
+              "childSize": 3,
+              "children": [
+                           {
+                           "_reference": "a9cbaa98-74c3-422d-ab24-bfd2c532faa5"
+                           },
+                           {
+                           "_reference": "fffbe975-cde6-418d-a30d-3ff2fe469376"
+                           },
+                           {
+                           "_reference": "71479f3b-b27a-42ce-89ab-d41937489759"
+                           }
+                           ]
+              },
+              {
+              "root": "false",
+              "label": "Banking-HSBC -Q1-2015",
+              "title": "Banking-HSBC -Q1-2015",
+              "parent": "049b6cd2-78a2-44d5-bb5a-55a047fdf427",
+              "type": "item",
+              "id": "8730c0bc-e23c-4c9b-bf41-739914e8b57b",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "root": "false",
+              "label": "Financial Markets-UBS -Q1-2015",
+              "title": "Financial Markets-UBS -Q1-2015",
+              "parent": "049b6cd2-78a2-44d5-bb5a-55a047fdf427",
+              "type": "item",
+              "id": "ede14b76-bb30-4a52-b926-3db71fadb06b",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "root": "false",
+              "label": "Insurance-Standard Life -Q1-2015",
+              "title": "Insurance-Standard Life -Q1-2015",
+              "parent": "049b6cd2-78a2-44d5-bb5a-55a047fdf427",
+              "type": "item",
+              "id": "39e73f3d-5f88-4b28-b2ec-7e7172d5c157",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "parElem": "false",
+              "root": "false",
+              "label": "Clients -Q1-2015",
+              "title": "Clients -Q1-2015",
+              "type": "item",
+              "parent": "4c4c0579-c439-41ef-a6ab-4f71a62e6737",
+              "id": "049b6cd2-78a2-44d5-bb5a-55a047fdf427",
+              "childSize": 3,
+              "children": [
+                           {
+                           "_reference": "8730c0bc-e23c-4c9b-bf41-739914e8b57b"
+                           },
+                           {
+                           "_reference": "ede14b76-bb30-4a52-b926-3db71fadb06b"
+                           },
+                           {
+                           "_reference": "39e73f3d-5f88-4b28-b2ec-7e7172d5c157"
+                           }
+                           ]
+              },
+              {
+              "root": "false",
+              "label": "Industry Leaders -Q1-2015",
+              "title": "Industry Leaders -Q1-2015",
+              "parent": "4c4c0579-c439-41ef-a6ab-4f71a62e6737",
+              "type": "item",
+              "id": "da16aadc-ae6f-4255-926f-b4f30e58de95",
+              "childSize": 0,
+              "children": []
+              },
+              {
+              "parElem": "false",
+              "root": "false",
+              "label": "FSS Nano SCALE - Q1 2015",
+              "title": "FSS Nano SCALE - Q1 2015",
+              "type": "item",
+              "parent": "fcdb1dc8-7fad-4558-82c0-438d7c25aac5",
+              "id": "4c4c0579-c439-41ef-a6ab-4f71a62e6737",
+              "childSize": 4,
+              "children": [
+                           {
+                           "_reference": "fc85f335-8288-4e4e-a457-c28beef3ced3"
+                           },
+                           {
+                           "_reference": "89b828ff-9926-4dc9-98fd-e4af703e1b93"
+                           },
+                           {
+                           "_reference": "049b6cd2-78a2-44d5-bb5a-55a047fdf427"
+                           },
+                           {
+                           "_reference": "da16aadc-ae6f-4255-926f-b4f30e58de95"
+                           }
+                           ]
+              },
+              {
+              "parElem": "false",
+              "root": "false",
+              "label": "Welcome to FSS (Financial Services Sector)",
+              "title": "Welcome to FSS (Financial Services Sector)",
+              "type": "item",
+              "id": "fcdb1dc8-7fad-4558-82c0-438d7c25aac5",
+              "childSize": 2,
+              "children": [
+                           {
+                           "_reference": "6d5f9423-50ca-4302-a172-d29b9f96faf1"
+                           },
+                           {
+                           "_reference": "4c4c0579-c439-41ef-a6ab-4f71a62e6737"
+                           }
+                           ]
+              },
+              {
+              "parElem": "false",
+              "root": "true",
+              "label": "tree",
+              "type": "item",
+              "id": "tree",
+              "childSize": 1,
+              "children": [
+                           {
+                           "_reference": "fcdb1dc8-7fad-4558-82c0-438d7c25aac5"
+                           }
+                           ]
+              }
+              ],
+    "label": "label",
+    "timestamp": 1430740699987,
+    "clean": true,
+    "identifier": "id",
+    "incremental": false,
+    "fullTree": true
+}
