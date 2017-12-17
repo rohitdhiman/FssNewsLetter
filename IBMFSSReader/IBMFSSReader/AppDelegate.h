@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import "LoginViewController.h"
+#import "IBMFSSNewsLetter-Swift.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

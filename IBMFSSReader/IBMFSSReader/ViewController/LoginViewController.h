@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "RootFeedProxy.h"
+#import "IBMFSSNewsLetter-Swift.h"
 
-@interface LoginViewController : UIViewController <UINavigationControllerDelegate, RootFeedProxyDelegate>
+@interface LoginViewController : UIViewController <UINavigationControllerDelegate, RootFeedProxyDelegate, FSSUtilityManagerDelegate>
 
 @end

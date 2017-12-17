@@ -38,6 +38,12 @@
 //#define HeaderFont                              @"Prism-Regular"
 #define HeaderFont                              @"LubalinGraphStd-Book"
 
+//MARK: - Genric constant
+#define kCurrentAppUser                         @"CurrentUser"
+#define kUserIsNotEnroll                        @"User is already enrol for faceId Login."
+#define kSorry                                  @"FSS"
+#define kZoomAuthAppToken                       @"dFGnmWLmIshabOjhRR2LJQaohCRVuYDS"
+
 @interface Constant : NSObject
 
 @end

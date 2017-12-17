@@ -9,9 +9,9 @@
 #import "LoginViewController.h"
 #import "MenuViewController.h"
 #import "MenuDetailViewController.h"
-
 #import "NewsReaderViewController.h"
 #import "SubMenuViewController.h"
+#import "IBMFSSNewsLetter-Swift.h"
 
 static NSString *const kHeaderTitle = @"IBM FSS\nNEWS LETTER";
 static NSString *const kInvalidLogin = @"Please enter w3 interanet id and password.";
@@ -35,12 +35,12 @@ static NSString *const kInvalidAccess = @"Please enter correct w3 interanet id a
 
 @property (nonatomic, weak) IBOutlet UITextField *userIdTextField;
 @property (nonatomic, weak) IBOutlet UITextField *passwordTextField;
-@property (nonatomic, weak) IBOutlet UILabel *headerLabel;
 @property (nonatomic, weak) IBOutlet UIView *loginView;
 @property (nonatomic, weak) IBOutlet UILabel *rememberMeLabel;
 @property (nonatomic, weak) IBOutlet UILabel *loginFailedLabel;
 @property (nonatomic, weak) IBOutlet UIButton *rememberMeButton;
 @property (nonatomic, weak) IBOutlet UIButton *loginButton;
+@property (nonatomic, weak) IBOutlet UIButton *loginWithFaceButton;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 @property (nonatomic, strong) UINavigationController *navigationController;
 @property (nonatomic, strong) NSString *rememberUserAccessStatus;
@@ -58,6 +58,8 @@ static NSString *const kInvalidAccess = @"Please enter correct w3 interanet id a
     // Do any additional setup after loading the view from its nib.
     [self configureView];
     //[self clearUserAccess];
+    [self getUserAccess];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,7 +72,7 @@ static NSString *const kInvalidAccess = @"Please enter correct w3 interanet id a
     [super viewWillAppear:animated];
     
     self.invalidLoginAttemptCounter = 0;
-    [self getUserAccess];
+    //[self getUserAccess];
 }
 
 #pragma mark
@@ -159,11 +161,12 @@ static NSString *const kInvalidAccess = @"Please enter correct w3 interanet id a
         self.rememberUserAccessStatus = @"1";
         
         [self checkNetworkAndValidateLogin];
+        return;
     }
     
     if(loginStatus == NO)
     {
-        [self clearLoginHistory];
+        //[self clearLoginHistory];
         
     }
 }
@@ -319,19 +322,14 @@ static NSString *const kInvalidAccess = @"Please enter correct w3 interanet id a
     
     [self.activityIndicatorView stopAnimating];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-    
     if([[rootFssDict allKeys] count] > 0 && [[rootFssDict allValues] count] > 0){
-        
         [self.loginFailedLabel setHidden:YES];
-        
         self.menuDict = rootFssDict;
         [self processUserLogin];
-        
     }else {
-        
         [UIUtils alertView:kInvalidAccess
                  withTitle:@""];
-        [self clearLoginHistory];
+        //[self clearLoginHistory];
         
         //handle failed login/ incorrect login
         if(self.invalidLoginAttemptCounter == 2) {
@@ -339,7 +337,6 @@ static NSString *const kInvalidAccess = @"Please enter correct w3 interanet id a
         }
         self.invalidLoginAttemptCounter++;
     }
-    
 }
 
 - (void) rootFssFail : (NSString *)error {
@@ -372,23 +369,50 @@ static NSString *const kInvalidAccess = @"Please enter correct w3 interanet id a
            [self.passwordTextField.text length] > 6) {
             [self checkNetworkAndValidateLogin];
             [self resignTextFieldResponder];
-        }else {
+        } else {
             [UIUtils alertView:kInvalidLogin
                      withTitle:@"Error"];
         }
-        
-        
-    }else if ([sender isKindOfClass:[UIButton class]] && [sender isEqual:self.rememberMeButton]) {
+    } else if ([sender isKindOfClass:[UIButton class]] && [sender isEqual:self.rememberMeButton]) {
         [self rememberUserLogin:sender];
+    } else if ([sender isKindOfClass:[UIButton class]] && [sender isEqual:self.loginWithFaceButton]) {
+        if ([self.userIdTextField.text length] > 0 && [self.passwordTextField.text length] > 0) {
+            self.rememberUserAccessStatus = @"1";
+            [self saveUserAccess];
+        }
+        
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        if (([[FSSUtilityManager sharedFSSUtility] checkEnrollmentStatus] == NO) &&
+            [defaults valueForKey:@"userEmail"] == nil && [defaults valueForKey:@"password"] == nil) {
+            [UIUtils alertView:@"Please enter userName and password." withTitle:@"Sorry"];
+        } else {
+            self.userIdTextField.text = [defaults valueForKey:@"userEmail"];
+            self.passwordTextField.text = [defaults valueForKey:@"password"];
+            [FSSUtilityManager sharedFSSUtility].presetingViewController = self;
+            [FSSUtilityManager sharedFSSUtility].delegate = self;
+            [[FSSUtilityManager sharedFSSUtility] performZoomAuthenticationEnrollment];
+        }
     }
 }
 
 #pragma mark
 #pragma mark TextFieldDelegate Method
--(BOOL)textFieldShouldReturn:(UITextField *)textField
-{
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
+}
+
+#pragma mark
+#pragma mark FSSUtilityManagerDelegatem Method
+- (void) userEnrollmentStatusWithResult:(ZoomEnrollmentResult *)result {
+    NSLog(@"result enrollment : %ld",(long)result.status);
+}
+
+- (void) userAuthenticationStatusWithResult:(ZoomAuthenticationResult *)result {
+    NSLog(@"result authentication : %ld",(long)result.status);
+    if (result.status == 0) {
+        [self checkNetworkAndValidateLogin];
+    }
 }
 
 @end

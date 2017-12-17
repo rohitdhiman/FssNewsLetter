@@ -63,7 +63,26 @@
 		F9EA9DFC1B7B44E7004FC2EA /* IMFCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EA9DF81B7B44E7004FC2EA /* IMFCore.framework */; };
 		F9EA9DFD1B7B44E7004FC2EA /* IMFData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EA9DF91B7B44E7004FC2EA /* IMFData.framework */; };
 		F9EA9DFE1B7B44E7004FC2EA /* IMFPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EA9DFA1B7B44E7004FC2EA /* IMFPush.framework */; };
+		F9EEAD441FE57D13008EEF5F /* ZoomAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EEAD421FE57D12008EEF5F /* ZoomAuthentication.framework */; };
+		F9EEAD451FE57D13008EEF5F /* ZoomConfigurationForTestApplication.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F9EEAD431FE57D12008EEF5F /* ZoomConfigurationForTestApplication.xcconfig */; };
+		F9EEAD481FE57EBA008EEF5F /* FSSUtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EEAD471FE57EBA008EEF5F /* FSSUtilityManager.swift */; };
+		F9EEAD491FE5986C008EEF5F /* ZoomAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EEAD421FE57D12008EEF5F /* ZoomAuthentication.framework */; };
+		F9EEAD4A1FE5986C008EEF5F /* ZoomAuthentication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9EEAD421FE57D12008EEF5F /* ZoomAuthentication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F9EEAD4B1FE5986C008EEF5F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F9EEAD4A1FE5986C008EEF5F /* ZoomAuthentication.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F908581B1B63C54E0052FAF1 /* SubMenuProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubMenuProxy.h; sourceTree = "<group>"; };
@@ -163,6 +182,10 @@
 		F9EA9DF81B7B44E7004FC2EA /* IMFCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMFCore.framework; sourceTree = "<group>"; };
 		F9EA9DF91B7B44E7004FC2EA /* IMFData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMFData.framework; sourceTree = "<group>"; };
 		F9EA9DFA1B7B44E7004FC2EA /* IMFPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMFPush.framework; sourceTree = "<group>"; };
+		F9EEAD421FE57D12008EEF5F /* ZoomAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZoomAuthentication.framework; sourceTree = "<group>"; };
+		F9EEAD431FE57D12008EEF5F /* ZoomConfigurationForTestApplication.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ZoomConfigurationForTestApplication.xcconfig; sourceTree = "<group>"; };
+		F9EEAD461FE57EBA008EEF5F /* IBMFSSNewsLetter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBMFSSNewsLetter-Bridging-Header.h"; sourceTree = "<group>"; };
+		F9EEAD471FE57EBA008EEF5F /* FSSUtilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSSUtilityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,12 +193,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9EEAD441FE57D13008EEF5F /* ZoomAuthentication.framework in Frameworks */,
 				F9878D531B4E397600562D39 /* SystemConfiguration.framework in Frameworks */,
 				F9EA9DFE1B7B44E7004FC2EA /* IMFPush.framework in Frameworks */,
 				F9EA9DFD1B7B44E7004FC2EA /* IMFData.framework in Frameworks */,
 				F95D70BC1B43E8AD0015B3BA /* libxml2.2.dylib in Frameworks */,
 				F9EA9DFC1B7B44E7004FC2EA /* IMFCore.framework in Frameworks */,
 				F9878D511B4E395400562D39 /* libCrittercism_v5_2_0.a in Frameworks */,
+				F9EEAD491FE5986C008EEF5F /* ZoomAuthentication.framework in Frameworks */,
 				F9EA9DFB1B7B44E7004FC2EA /* CloudantToolkit.framework in Frameworks */,
 				F95D70BA1B43E8980015B3BA /* libxml2.dylib in Frameworks */,
 			);
@@ -335,6 +360,8 @@
 		F9D1CE281B22E2B300AE76B1 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				F9EEAD421FE57D12008EEF5F /* ZoomAuthentication.framework */,
+				F9EEAD431FE57D12008EEF5F /* ZoomConfigurationForTestApplication.xcconfig */,
 				F9EA9DF71B7B44E7004FC2EA /* CloudantToolkit.framework */,
 				F9EA9DF81B7B44E7004FC2EA /* IMFCore.framework */,
 				F9EA9DF91B7B44E7004FC2EA /* IMFData.framework */,
@@ -367,6 +394,8 @@
 				F9B8E7B11B285BC40053342B /* XMLReader.m */,
 				F95839B01B6EA7FF00D28CD6 /* DeviceUtility.h */,
 				F95839B11B6EA7FF00D28CD6 /* DeviceUtility.m */,
+				F9EEAD471FE57EBA008EEF5F /* FSSUtilityManager.swift */,
+				F9EEAD461FE57EBA008EEF5F /* IBMFSSNewsLetter-Bridging-Header.h */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -482,6 +511,7 @@
 				F9D1CDF91B22E23900AE76B1 /* Frameworks */,
 				F9D1CDFA1B22E23900AE76B1 /* Resources */,
 				F94F40F61B655E3500F8264E /* ShellScript */,
+				F9EEAD4B1FE5986C008EEF5F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -503,6 +533,9 @@
 				TargetAttributes = {
 					F9D1CDFB1B22E23900AE76B1 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 2U2D4HE433;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -546,6 +579,7 @@
 				F96533611B4BB9B10039AB64 /* Default-568h@2x.png in Resources */,
 				F9878D501B4E395400562D39 /* dsym_upload.sh in Resources */,
 				F91A02331B733A6C00AFFE4C /* nanoscale.png in Resources */,
+				F9EEAD451FE57D13008EEF5F /* ZoomConfigurationForTestApplication.xcconfig in Resources */,
 				F96533681B4BD8430039AB64 /* left_menu.png in Resources */,
 				F9BD50921B59404C0029C05F /* new_FSS_banner_1.png in Resources */,
 				F9BD50901B593B670029C05F /* new_FSS_banner.png in Resources */,
@@ -594,6 +628,7 @@
 				F94345681B244A1700A062B8 /* PeopleModel.m in Sources */,
 				F94345611B24424700A062B8 /* NetworkUtils.m in Sources */,
 				F908581D1B63C54E0052FAF1 /* SubMenuProxy.m in Sources */,
+				F9EEAD481FE57EBA008EEF5F /* FSSUtilityManager.swift in Sources */,
 				F94345641B2442D200A062B8 /* UIUtils.m in Sources */,
 				F9B8E7BC1B2969160053342B /* MenuTableCustomHeader.m in Sources */,
 				F9D1CE411B237BA500AE76B1 /* MenuCustomCell.m in Sources */,
@@ -711,10 +746,15 @@
 		F9D1CE231B22E23900AE76B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Owais Iqbal (7QEP6548T2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Owais Iqbal (7QEP6548T2)";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2U2D4HE433;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/IBMFSSReader/Framework";
 				GCC_PREFIX_HEADER = "IBMFSSReader/IBMFSSNewsLetter-PrefixHeader.pch";
@@ -723,8 +763,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/IBMFSSReader/Framework/CrittercismSDK";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adib.fss;
 				PRODUCT_NAME = IBMFSSNewsLetter;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "481ad489-390c-4c8e-b638-f712ba557f74";
+				PROVISIONING_PROFILE_SPECIFIER = ADIBMobileWildCard221117;
+				SWIFT_OBJC_BRIDGING_HEADER = "IBMFSSReader/Utility/IBMFSSNewsLetter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -733,10 +778,15 @@
 		F9D1CE241B22E23900AE76B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Owais Iqbal (7QEP6548T2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Owais Iqbal (7QEP6548T2)";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2U2D4HE433;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/IBMFSSReader/Framework";
 				GCC_PREFIX_HEADER = "IBMFSSReader/IBMFSSNewsLetter-PrefixHeader.pch";
@@ -745,8 +795,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/IBMFSSReader/Framework/CrittercismSDK";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adib.fss;
 				PRODUCT_NAME = IBMFSSNewsLetter;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "481ad489-390c-4c8e-b638-f712ba557f74";
+				PROVISIONING_PROFILE_SPECIFIER = ADIBMobileWildCard221117;
+				SWIFT_OBJC_BRIDGING_HEADER = "IBMFSSReader/Utility/IBMFSSNewsLetter-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
