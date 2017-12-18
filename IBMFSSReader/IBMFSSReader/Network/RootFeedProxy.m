@@ -26,19 +26,19 @@ static NSString *const kFssRootURL = @"46823d8e-fd6d-4fed-9742-63d8f407240a/nav/
 - (void) getFSSRootFeed {
     
     //Enable this code, if online is required
-    /*
+    
     NSMutableString *urlStr = [[NSMutableString alloc] initWithFormat:@"%@%@",[Cache cache].baseURL,kFssRootURL];
     [super getRequestDataWithURL:urlStr
                  usingSessionKey:@""
                   andRequestName:kFSSRootAPIRequest];
-    */
+    
     self.requestName = kFSSRootAPIRequest;
-
+    /*
     //Read json from local, in offline mode only
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"menu" ofType:@"json"];
     NSString *resposeString = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
     [self connectionFinishLoadingWithResponse:resposeString];
-    
+    */
 }
 
 #pragma mark
@@ -119,11 +119,11 @@ static NSString *const kFssRootURL = @"46823d8e-fd6d-4fed-9742-63d8f407240a/nav/
     for(NSDictionary *fssMenuDict in [responseDict objectForKey:@"items"]) {
         if([rootMenuModel.itemId isEqualToString:[fssMenuDict valueForKey:@"parent"]]){
             int fssYear = [[[[fssMenuDict valueForKey:@"title"] componentsSeparatedByString:@" "] lastObject] intValue];
-            if(fssYear == currentYear-1) {
+            //if(fssYear == currentYear-1) {
                 fssMenuModel = [MenuModel menuModelFromDictionary:fssMenuDict];
                 [Cache cache].fssHeader = [NSString stringWithFormat:@"%@",fssMenuModel.title];
                 break;
-            }
+            //}
         }
     }
     
